@@ -98,12 +98,27 @@ Eight rules in four steps. Full text and reasoning in [`CONSTITUTION.md`](CONSTI
 | | 7 | Normal pipeline | Agent code passes the same gates as anyone's. |
 | **Make it fast** | 8 | Feed lessons back | Every miss becomes an amendment. |
 
+## The proverbs
+
+The constitution is how I work. The proverbs are how I build. They are short design sayings with no technology named, checked when a plan is reviewed, because a setting costs a sentence in a plan and a rewrite after. Each one also says when to break it. Full text in [`PROVERBS.md`](PROVERBS.md).
+
+These six are mine. Swap in your own and nothing breaks: the plan review reads whatever proverbs a project has.
+
+| # | Proverb | In plain words |
+|---|---|---|
+| 1 | Boil up what varies | Retries, timeouts, and limits are settings, not code. |
+| 2 | Let the user decide at runtime | Where people differ, give them the choice while they use it. |
+| 3 | Every launch has an off switch | Turn a feature off without a new release. |
+| 4 | Add, don't edit | Extend by adding beside what shipped, not by reopening it. |
+| 5 | Compose, don't inherit | Small pieces combined, not deep hierarchies. |
+| 6 | Idle costs nothing | Pay for what is used, and nothing while nobody is using it. |
+
 ## The skills
 
 | Skill | Rules | What it does | Status |
 |---|---|---|---|
 | [`fuzzy-clear`](skills/fuzzy-clear/SKILL.md) | 1, 2 | Interviews you in rounds until a vague ask becomes a one-page brief. | ✅ Ready |
-| `poke-holes` | 3 | Attacks a plan before any code is written. | 🔜 Planned |
+| [`poke-holes`](skills/poke-holes/SKILL.md) | 3 | Attacks a plan before any code is written, and checks it against the proverbs. | 📝 Drafted, not yet run |
 | `small-bites` | 4, 5 | Splits a plan into pieces that can each be checked. | 🔜 Planned |
 | `prove-it` | 6 | Refuses "done" without evidence. | 🔜 Planned |
 | `trace-back` | 8 | Finds which rule should have caught a failure and drafts the amendment. | 🔜 Planned |
@@ -116,6 +131,7 @@ The process is meant to be corrected by use. This log is the part I care about m
 
 | # | Date | What changed | Why |
 |---|---|---|---|
+| 003 | 2026-11-23 | Added six design proverbs and drafted `poke-holes`, the plan review that checks them. | The rules covered how to work, but nothing said how to build. |
 | 002 | 2026-11-23 | Everything is written once in an open format. Tool-specific files are thin adapters only. | The first draft assumed one tool. A process that only works in one vendor's product is a habit, not a process. |
 | 001 | 2026-11-23 | `kickoff` renamed `fuzzy-clear`. The readiness list became the "clear check". | The name should say what goes in and what comes out. |
 
@@ -146,11 +162,14 @@ Tool-specific notes, where a tool needs one, live in [`adapters/`](adapters/READ
 
 ```text
 make-it-plain/
-├── CONSTITUTION.md      the eight rules, with reasoning
-├── AMENDMENTS.md        every change to the rules, dated, with why
+├── CONSTITUTION.md      how I work: the eight rules, with reasoning
+├── PROVERBS.md          how I build: the design sayings
+├── AMENDMENTS.md        every change to either, dated, with why
 ├── AGENTS.md            how an agent should work in this repo
 ├── skills/              one folder per skill, written once
-│   └── fuzzy-clear/
+│   ├── fuzzy-clear/
+│   │   └── SKILL.md
+│   └── poke-holes/
 │       └── SKILL.md
 ├── adapters/            thin, tool-specific wrappers, only where needed
 └── docs/briefs/         real briefs produced by the process

@@ -4,6 +4,8 @@ The standing rules for building software with AI agents. Every piece of work is 
 
 These rules apply the same way in any tool. Nothing here depends on a vendor.
 
+This document is about how to work. For how to build, see [`PROVERBS.md`](PROVERBS.md).
+
 ## Before the rules
 
 Three things this document assumes.

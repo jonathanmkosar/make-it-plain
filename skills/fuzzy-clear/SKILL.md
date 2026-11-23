@@ -53,6 +53,7 @@ Ask a round of three to five questions, then stop and wait. Then the next round.
 - **Write as you go.** When an answer settles something, put it in the brief right away and cross it off the fuzz list. The conversation disappears; the document does not.
 - **Challenge vague words.** "Fast", "simple", "users", "integrate", "soon" each hide a decision. Ask what they mean here. If a term conflicts with how the project already uses it, say so and settle on one meaning.
 - **Push on the weak spots.** Ask what happens when it fails, who disagrees, what was tried before, and what would make this not worth doing.
+- **Ask what will change.** What will need to change after launch, and who changes it? Values and behavior that vary are cheap to plan for now and expensive to add later. Record the answer under constraints.
 - **Accept "I don't know".** The user often does not have the answer because the requester has not said. Record it as an open question with an owner. Do not invent an answer to keep moving.
 - **Stop when further questions would not change what gets built.** More questions past that point are delay.
 

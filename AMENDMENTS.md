@@ -6,6 +6,16 @@ An entry is added when something went wrong, when a step turned out to be dead w
 
 ---
 
+## 003 · 2026-11-23 · Design proverbs, and a plan review that checks them
+
+**Changed:** Added `PROVERBS.md`, six short sayings about how to build, each with a reason, a question to ask in the plan, and when to break it. Drafted the `poke-holes` skill, which reviews a plan against the brief, the proverbs, how it fails, and whether it can be built in small pieces. `fuzzy-clear` now asks what will need to change after launch.
+
+The proverbs are replaceable. Skills depend on their shape (a saying and a question), not on which ones are listed, so anyone can swap in their own.
+
+**Why:** The constitution covered how to work, but nothing said how to build. Design preferences cost a sentence in a plan and a rewrite once the code exists, so they belong at plan review.
+
+**Touches:** `PROVERBS.md`, `skills/poke-holes/SKILL.md`, `skills/fuzzy-clear/SKILL.md`.
+
 ## 002 · 2026-11-23 · Written once, for any agent
 
 **Changed:** All content is written once in an open format (`SKILL.md` for skills, plain Markdown for rules). Anything tool-specific is a thin file in `adapters/` that points back to the original.
