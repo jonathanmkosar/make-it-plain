@@ -6,6 +6,14 @@ An entry is added when something went wrong, when a step turned out to be dead w
 
 ---
 
+## 004 · 2026-11-23 · Bring your own rules
+
+**Changed:** The constitution is now replaceable in the same way as the proverbs. `fuzzy-clear` reads whatever constitution a project has and falls back to starter rules only when there is none. No skill refers to a rule by number any more. `CONSTITUTION.md` has a "Bring your own" section that says what a rule needs and where the limit is.
+
+**Why:** The skills had my eight rules written into them and referred to them by number. That is a hard-coded value that other people will want to change, which breaks the first proverb: boil up what varies.
+
+**Touches:** `CONSTITUTION.md`, `skills/fuzzy-clear/SKILL.md`, `skills/poke-holes/SKILL.md`, `AGENTS.md`.
+
 ## 003 · 2026-11-23 · Design proverbs, and a plan review that checks them
 
 **Changed:** Added `PROVERBS.md`, six short sayings about how to build, each with a reason, a question to ask in the plan, and when to break it. Drafted the `poke-holes` skill, which reviews a plan against the brief, the proverbs, how it fails, and whether it can be built in small pieces. `fuzzy-clear` now asks what will need to change after launch.

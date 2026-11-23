@@ -7,7 +7,7 @@ description: Review a plan before any code is written by attacking it. Checks th
 
 Attack a plan before any code is written. A plan is the cheapest place to be wrong: changing it costs a sentence, and changing the implementation costs a rewrite.
 
-This serves rule 3 of the constitution (plan before code) and checks that rules 4 and 5 (small pieces, build with checks) are possible.
+It exists because a plan should be reviewed before code is written. It also checks that the work can be built in small pieces that are each proven.
 
 The output is a short list of **holes**: specific things in the plan that will cause trouble later, each with a way to close it. It is not a rewritten plan.
 

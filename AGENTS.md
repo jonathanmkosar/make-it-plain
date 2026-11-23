@@ -11,7 +11,7 @@ A process for building software with AI agents: a constitution of eight rules fo
 - **Write once.** A skill's content lives in `skills/<name>/SKILL.md` and nowhere else. Do not copy it into tool-specific files.
 - **Adapters stay thin.** If a tool needs something special, add a small file under `adapters/` that points back to the skill. An adapter never restates the skill.
 - **Nothing vendor-specific in skills or the constitution.** No tool names, no tool-only commands. If an instruction only works in one product, it belongs in an adapter.
-- **Proverbs stay replaceable.** No skill refers to a proverb by name or number. Skills read whatever proverbs a project has and depend only on the shape: a saying and a question.
+- **Rules and proverbs stay replaceable.** No skill refers to a constitution rule or a proverb by name or number. Skills read whatever a project has and depend only on the shape: a rule is a name and a plain statement, and a proverb is a saying and a question.
 - **Log every rule change.** Any edit to `CONSTITUTION.md`, `PROVERBS.md`, or a skill's behavior gets an entry in `AMENDMENTS.md` with the date and the reason. Typo fixes do not.
 - **Plain language.** Short sentences, no jargon, no filler. A non-technical reader should be able to follow the README and the constitution.
 - **No unbacked claims.** Do not add usage numbers, testimonials, or "used by" lines. A skill is marked ready only after it has been run.
@@ -21,7 +21,7 @@ A process for building software with AI agents: a constitution of eight rules fo
 
 1. Run `fuzzy-clear` on the idea first and save the brief under `docs/briefs/`.
 2. Create `skills/<name>/SKILL.md` with `name` and `description` in the frontmatter.
-3. Say which constitution rules it serves.
+3. Inside the skill, say what it is for in plain words, not rule numbers. Rule numbers go only in the README table.
 4. Add it to the skills table in `README.md`, marked drafted until it has been run on real work. Only then is it marked ready.
 
 ## Layout

@@ -98,6 +98,8 @@ Eight rules in four steps. Full text and reasoning in [`CONSTITUTION.md`](CONSTI
 | | 7 | Normal pipeline | Agent code passes the same gates as anyone's. |
 | **Make it fast** | 8 | Feed lessons back | Every miss becomes an amendment. |
 
+These eight are mine. Swap in your own and the skills use yours: no skill refers to a rule by number.
+
 ## The proverbs
 
 The constitution is how I work. The proverbs are how I build. They are short design sayings with no technology named, checked when a plan is reviewed, because a setting costs a sentence in a plan and a rewrite after. Each one also says when to break it. Full text in [`PROVERBS.md`](PROVERBS.md).
@@ -131,6 +133,7 @@ The process is meant to be corrected by use. This log is the part I care about m
 
 | # | Date | What changed | Why |
 |---|---|---|---|
+| 004 | 2026-11-23 | The constitution and the proverbs can both be replaced with your own. Skills depend on their shape, not their content. | Hard-coding my rules into the skills broke my own first proverb. |
 | 003 | 2026-11-23 | Added six design proverbs and drafted `poke-holes`, the plan review that checks them. | The rules covered how to work, but nothing said how to build. |
 | 002 | 2026-11-23 | Everything is written once in an open format. Tool-specific files are thin adapters only. | The first draft assumed one tool. A process that only works in one vendor's product is a habit, not a process. |
 | 001 | 2026-11-23 | `kickoff` renamed `fuzzy-clear`. The readiness list became the "clear check". | The name should say what goes in and what comes out. |

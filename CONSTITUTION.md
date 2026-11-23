@@ -70,6 +70,37 @@ Every miss becomes an amendment to these rules or to a skill. Speed comes last, 
 
 *Why:* a mistake fixed only in the code will be made again. A mistake fixed in the rules is made once.
 
+## Bring your own
+
+These eight are one person's rules. Yours can differ, and the skills will use yours.
+
+**What a rule needs**
+
+| Part | Required? | Why |
+|---|---|---|
+| A name, in a few words | Yes | So it can be pointed to when something goes wrong. |
+| A plain statement of the rule | Yes | This is the part the skills read. |
+| Why it matters | Recommended | So it can be argued with. |
+
+The four steps (make it plain, work, right, fast) are a way to group the rules. They are optional.
+
+**What you can do**
+
+- **Replace the whole list.** Delete these and write your own in the same shape.
+- **Add or remove one.** Order and numbering do not matter.
+- **Switch one off for a single project.** Say in that project's rules file which rule does not apply there, and why.
+- **Keep your list somewhere else.** Point to it from the project's rules file.
+
+**Why nothing breaks**
+
+No skill refers to a rule by number. `fuzzy-clear` reads whatever constitution the project has. If a project has none, it falls back to a short set of starter rules.
+
+Rule numbers appear in the README tables, which are there for readers and are not read by any skill.
+
+**The limit**
+
+Swapping the rules changes what the work is checked against. It does not change what the skills do: `fuzzy-clear` still writes a brief before anything is built. A rule that no skill acts on is only enforced by people remembering it, until someone writes a skill for it.
+
 ## How to amend
 
 1. Something goes wrong, or a step turns out to be dead weight.

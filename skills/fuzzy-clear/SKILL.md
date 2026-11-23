@@ -13,16 +13,28 @@ The output is one short document, the **brief**. It is not a requirements spec o
 
 ## The constitution
 
-These are the standing rules the process protects. Every run checks the work against them. When something goes wrong later, the fix is to amend this list or the questions below, not to work around it once.
+The constitution is the set of standing rules the process protects. Every run checks the work against them. When something goes wrong later, the fix is to amend the rules or the questions below, not to work around it once.
 
-1. **Clarify before building.** The problem, who it is for, and what "done" looks like are written down and agreed before any code.
-2. **Context first.** Read what already exists (code, docs, tickets, standards) before proposing anything.
-3. **Plan before code.** A reviewed approach comes before implementation. This is the cheapest place to catch a wrong direction.
-4. **Small pieces.** Work is split into tasks that can each be built and checked on their own.
-5. **Build with checks.** Each piece has a way to prove it works, decided before it is built.
-6. **Evidence, not claims.** "It works" means test output, a screenshot, or a reproduced result. A person reviews before it ships.
-7. **Normal pipeline.** Agent-written work goes through the same review and release gates as anyone's.
-8. **Feed lessons back.** Every miss becomes an amendment to this process.
+Use whatever constitution the project has. This skill depends on its shape, not its content: any list of rules works as long as each one has a name and a plain statement. Never refer to a rule by number, and never assume a particular rule exists.
+
+Look in this order and stop at the first one found:
+
+1. A constitution file that the project's rules file points to.
+2. A `CONSTITUTION.md` at the project root.
+3. Neither. Use the starter rules below.
+
+A project's own constitution replaces the starter rules completely. Do not mix the two lists.
+
+Starter rules, for projects with no constitution:
+
+- **Clarify before building.** The problem, who it is for, and what "done" looks like are written down and agreed before any code.
+- **Context first.** Read what already exists (code, docs, tickets, standards) before proposing anything.
+- **Plan before code.** A reviewed approach comes before implementation. This is the cheapest place to catch a wrong direction.
+- **Small pieces.** Work is split into tasks that can each be built and checked on their own.
+- **Build with checks.** Each piece has a way to prove it works, decided before it is built.
+- **Evidence, not claims.** "It works" means test output, a screenshot, or a reproduced result. A person reviews before it ships.
+- **Normal pipeline.** Agent-written work goes through the same review and release gates as anyone's.
+- **Feed lessons back.** Every miss becomes an amendment to this process.
 
 ## How to run it
 
@@ -79,7 +91,7 @@ Give the user the brief and, separately, a short list of **questions to take bac
 The process is meant to be corrected by use.
 
 - **During the work:** if the brief turns out wrong, update the brief first, then the work. The brief stays the source of truth.
-- **When something goes wrong later:** ask which step of the constitution or which question would have caught it. Propose a specific amendment: a new question, a new clear-check line, or a changed rule.
+- **When something goes wrong later:** ask which rule of the constitution or which question would have caught it. Propose a specific amendment: a new question, a new clear-check line, or a changed rule.
 - **At the end:** one line in the brief's log on what this run missed, even if the answer is "nothing".
 
 Project-specific amendments go in that project's standing rules file (for example `AGENTS.md`). Amendments that apply everywhere are proposed as a change to this skill. Keep amendments small and worded as a rule or a question, not a story.

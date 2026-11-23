@@ -117,7 +117,7 @@ These six are one person's preferences. Yours will differ, and the process does 
 
 No skill refers to a proverb by name or number. `poke-holes` reads whatever list the project has and asks each entry's question. If a project has none, it falls back to a short set of starter questions and says so.
 
-The only other place these six appear is the summary table in the README, which is there for readers and is not read by any skill.
+Outside this file, these sayings appear only in the README and the change log. Both are there for readers and are not read by any skill.
 
 ## Changing the list in this repo
 
